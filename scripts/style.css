@@ -1,0 +1,125 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Styling for Markdown container paragraphs */
+[data-testid="stMarkdownContainer"] p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Styling for the input box */
+[data-baseweb="base-input"] {
+    text-size-adjust: 100%;
+    -webkit-tap-highlight-color: #0E0447;
+    -webkit-font-smoothing: auto;
+    color-scheme: dark;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.6;
+    background-color: #0E0447;
+    transition-property: background-color;
+    color: rgb(250, 250, 250);
+}
+
+/* Styling for the input field within the base input */
+[data-baseweb="base-input"] input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #17067C;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: rgb(250, 250, 250);
+    background-color: #0E0447;
+    box-sizing: border-box;
+}
+
+/* Styling for the suggestions container */
+.suggestions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Styling for individual suggestion boxes */
+.suggestion-box {
+    width: 150px;
+    height: 200px;
+    padding: 15px;
+    background-color: #0E0447;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Styling for the title inside suggestion boxes */
+.suggestion-box .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Styling for details inside suggestion boxes */
+.suggestion-box .details {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+/* Styling for the random movie button container */
+.random-movie-button-container {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    margin: 20px 0; /* Margin around the button */
+}
+
+/* Styling for the random movie button */
+[data-testid="baseButton-secondary"] {
+    background-color: #0E0447; /* Dark background color */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    text-align: center; /* Center text inside the button */
+}
+
+/* Styling for the button hover state */
+[data-testid="baseButton-secondary"]:hover {
+    background-color: #17067C; /* Slightly lighter background on hover */
+}
